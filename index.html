@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <!--Copyright Nigel Van Gronigen, Jr - 2019                 -->
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vantage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
+    <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+</head>
+
+<body>
+<nav>&nbsp;</nav>
+<section class="ticketing">
+    <!--TICKET TABS                 -->
+    <a href="#" class="bt" onclick="showTicket(0, '#fff')">Ticket 1 <i class="fas fa-times"></i></a>
+    <a href="#" class="bt" onclick="showTicket(1, '#fff')">Ticket 2 <i class="fas fa-times"></i></a>
+    <a href="#" class="bt" onclick="showTicket(2, '#fff')">Ticket 3 <i class="fas fa-times"></i></a>
+    <a href="#" class="btn">Add New</a>
+    <a href="#" class="btn"><i class="fas fa-plus"></i></a>    
+    <main>
+        <!--TICKET1                 -->
+        <section class="TabGroup TabGroup1">
+            <!--MESSAGE CONTACT FAQ TABS                -->
+            <a href="#" class="message-btn" onclick="showPanel(0,'#fff')">Message</a>
+            <a href="#" class="contact-btn" onclick="showPanel(1,'#fff')">Contact Info</a>
+            <a href="#" class="faq-btn" onclick="showPanel(2,'#fff')">FAQ</a>
+            
+
+            <section class="MessageTab">
+                <h3>Help&excl; Issues Logging In</h3>
+                <a href="#" id="attachment"><i class="fas fa-paperclip"></i></a>
+                <div class="textbox">
+                <p class="datetime">March 08, 2017 2:03PM</p>
+                <p>Hello Support&comma;<br><br>
+                    I am unable to login to my account. I tried resetting my password but I still cannot login. Can you please help.<br><br>
+                    Thank you&comma;<br>
+                    Customer<br>
+                </p>
+                <a href="#" id="Comment">Comment</a>
+                <a href="#" id="Forward"><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" id="Reply"><i class="fas fa-reply"></i></a>
+                </div>
+            </section>
+
+
+            <section class="ContactTab">
+                
+            <h3>CONTACT</h3>
+                <div class="b">Name</div><div>John Doe</div>
+                <div class="b">Department</div><div>Sales</div>
+                <div class="b">Email</div><div>johndoe gmail.com</div>
+                <div class="b">Reports To</div><div>Ashley</div>
+                <div class="b">Phone</div><div>123.465.7890</div>
+                <div class="b">Notify Owner</div><div>No</div>
+                <div class="b">Account</div><div>Deer Funds</div>
+                <div class="b">Modified</div><div>Yesterday</div>
+                <div class="b">Title</div><div>1 Hour</div>
+                <div class="b">Created</div><div>March 02 2017</div>
+            <h3>ADDRESS INFORMATION</h3>
+                <div class="b">Street</div><div>1 Broad Street</div>
+                <div class="b">PO Box</div><div>1300</div>
+                <div class="b">City</div><div>Philadelphia</div>
+                <div class="b">State</div><div>PA</div>
+                <div class="b">Postal Code</div><div>19103</div>
+                <div class="b">Country</div><div>US</div>
+            <h3>TROUBLE TICKET HISTORY</h3>
+                <div class="b">Name</div>
+                <div class="b">Status</div>
+                <div class="b">Date Time</div>
+                <div></div>
+                <div>Trouble Ticket 1</div><div>Received</div><div>Received</div><div></div>
+                <div>Trouble Ticket 2</div><div>Low</div><div>Low</div><div></div>
+                <div>Trouble Ticket 3</div><div>Open</div><div>Open</div><div></div>
+                <div>Trouble Ticket 4</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                <div>Trouble Ticket 5</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                
+            </section>
+
+
+            <section class="FAQTab">
+                <section class="search">Search FAQ</section>
+                <div>
+                    <h3>What is delyte</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What are tags</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What is an account</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I assign a contact</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I set ticket priority</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                
+            </section>
+
+        </section>
+        <!--TICKET2                 -->
+        <section class="TabGroup TabGroup2">
+            <!--MESSAGE CONTACT FAB TABS                 -->
+            <a href="#" class="message-btn" onclick="showPanel2(0,'#fff')">Message</a>
+            <a href="#" class="contact-btn" onclick="showPanel2(1,'#fff')">Contact Info</a>
+            <a href="#" class="faq-btn" onclick="showPanel2(2,'#fff')">FAQ</a>
+            
+
+            <section class="MessageTab">
+                <h3>Help&excl; Issues Logging In</h3>
+                <a href="#" id="attachment"><i class="fas fa-paperclip"></i></a>
+                <div class="textbox">
+                <p class="datetime">March 08, 2017 2:03PM</p>
+                <p>Hello Support<br><br>
+                    I am unable to login to my account. I tried resetting my password but I still cannot login. Can you please help.<br><br>
+                    Thank you<br>
+                    Customer<br>
+                </p>
+                <a href="#" id="Comment">Comment</a>
+                <a href="#" id="Forward"><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" id="Reply"><i class="fas fa-reply"></i></a>
+                </div>
+            </section>
+
+
+            <section class="ContactTab">
+                
+            <h3>CONTACT</h3>
+                <div class="b">Name</div><div>John Doe</div>
+                <div class="b">Department</div><div>Sales</div>
+                <div class="b">Email</div><div>johndoe gmail.com</div>
+                <div class="b">Reports To</div><div>Ashley</div>
+                <div class="b">Phone</div><div>123.465.7890</div>
+                <div class="b">Notify Owner</div><div>No</div>
+                <div class="b">Account</div><div>Deer Funds</div>
+                <div class="b">Modified</div><div>Yesterday</div>
+                <div class="b">Title</div><div>1 Hour</div>
+                <div class="b">Created</div><div>March 02 2017</div>
+            <h3>ADDRESS INFORMATION</h3>
+                <div class="b">Street</div><div>1 Broad Street</div>
+                <div class="b">PO Box</div><div>1300</div>
+                <div class="b">City</div><div>Philadelphia</div>
+                <div class="b">State</div><div>PA</div>
+                <div class="b">Postal Code</div><div>19103</div>
+                <div class="b">Country</div><div>US</div>
+            <h3>TROUBLE TICKET HISTORY</h3>
+                <div class="b">Name</div>
+                <div class="b">Status</div>
+                <div class="b">Date Time</div>
+                <div></div>
+                <div>Trouble Ticket 1</div><div>Received</div><div>Received</div><div></div>
+                <div>Trouble Ticket 2</div><div>Low</div><div>Low</div><div></div>
+                <div>Trouble Ticket 3</div><div>Open</div><div>Open</div><div></div>
+                <div>Trouble Ticket 4</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                <div>Trouble Ticket 5</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                
+            </section>
+
+
+            <section class="FAQTab">
+                <section class="search">Search FAQ</section>
+                <div>
+                    <h3>What is delyte</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What are tags</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What is an account</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I assign a contact</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I set ticket priority</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                
+            </section>
+
+        </section>
+        <!--TICKET3                 -->
+        <section class="TabGroup TabGroup3">
+            <!--MESSAGE CONTACT FAQ TABS                 -->
+            <a href="#" class="message-btn" onclick="showPanel3(0,'#fff')">Message</a>
+            <a href="#" class="contact-btn" onclick="showPanel3(1,'#fff')">Contact Info</a>
+            <a href="#" class="faq-btn" onclick="showPanel3(2,'#fff')">FAQ</a>
+            
+
+            <section class="MessageTab">
+                <h3>Help&excl; Issues Logging In</h3>
+                <a href="#" id="attachment"><i class="fas fa-paperclip"></i></a>
+                <div class="textbox">
+                <p class="datetime">March 08, 2017 2:03PM</p>
+                <p>Hello Support<br><br>
+                    I am unable to login to my account. I tried resetting my password but I still cannot login. Can you please help.<br><br>
+                    Thank you<br>
+                    Customer<br>
+                </p>
+                <a href="#" id="Comment">Comment</a>
+                <a href="#" id="Forward"><i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" id="Reply"><i class="fas fa-reply"></i></a>
+                </div>
+            </section>
+
+
+            <section class="ContactTab">
+                
+            <h3>CONTACT</h3>
+                <div class="b">Name</div><div>Nigel</div>
+                <div class="b">Department</div><div>Creative</div>
+                <div class="b">Email</div><div>nigel@vangronigen.com</div>
+                <div class="b">Reports To</div><div>Bossman</div>
+                <div class="b">Phone</div><div>123.465.7890</div>
+                <div class="b">Notify Owner</div><div>No</div>
+                <div class="b">Account</div><div>Peer Funds</div>
+                <div class="b">Modified</div><div>Yesterday</div>
+                <div class="b">Title</div><div>1 Hour</div>
+                <div class="b">Created</div><div>Dec 16 2019</div>
+            <h3>ADDRESS INFORMATION</h3>
+                <div class="b">Street</div><div>1 Broad Street</div>
+                <div class="b">PO Box</div><div>1300</div>
+                <div class="b">City</div><div>Philadelphia</div>
+                <div class="b">State</div><div>PA</div>
+                <div class="b">Postal Code</div><div>19103</div>
+                <div class="b">Country</div><div>US</div>
+            <h3>TROUBLE TICKET HISTORY</h3>
+                <div class="b">Name</div>
+                <div class="b">Status</div>
+                <div class="b">Date Time</div>
+                <div></div>
+                <div>Trouble Ticket 1</div><div>Received</div><div>Received</div><div></div>
+                <div>Trouble Ticket 2</div><div>Low</div><div>Low</div><div></div>
+                <div>Trouble Ticket 3</div><div>Open</div><div>Open</div><div></div>
+                <div>Trouble Ticket 4</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                <div>Trouble Ticket 5</div><div>1 Hour</div><div>1 Hour</div><div></div>
+                
+            </section>
+
+
+            <section class="FAQTab">
+                <section class="search">Search FAQ</section>
+                <div>
+                    <h3>What is delyte</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What are tags</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>What is an account</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I assign a contact</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>How do I set ticket priority</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                <div>
+                    <h3>Question Title Displayed Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur aspernatur voluptatibus voluptatem facilis minima consectetur sunt beatae, nulla ducimus omnis doloremque modi laudantium? Reprehenderit laborum deleniti quae quas! Voluptas!</p>
+                    <a href="#" id="link"></a>
+                </div>
+                
+            </section>
+
+        </section>
+        <!--SIDE PANEL                 -->
+        <aside>
+            <section class="TicketAction">
+                <a href="#" id="Edit"><i class="fas fa-edit fa"></i>&nbsp;&nbsp;Edit</a>
+                <a href="#" id="ChangeStatus"><i class="fas fa-flag"></i>&nbsp;&nbsp;Change Status</a>
+                <a href="#" id="Merge"><i class="fas fa-random"></i>&nbsp;&nbsp;Merge</a>
+                <a href="#" id="AddtoFAQ"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;Add To FAQ</a>
+            </section>
+            <div class="wrapper"><section class="FollowUp"><i class="fas fa-th-list"></i>&nbsp;Follow Up</section> <i class="far fa-calendar-check fa-2x"></i><section class="datentime">April 10 2017</section></div>
+            <section class="AddTags"><div><i class="fas fa-tag"></i>&nbsp;Add Tags</div><a href="#">Add</a></section>
+            <section class="LoginIssue">
+                <h6>Login Issue</h6>
+                <div class="b">Ticket Duration</div><div>1 Hour</div>
+                <div class="b">Email Thread Status</div class="b"><div>Received</div>
+                <div class="b">Priority</div><div>Low</div>
+                <div class="b">Status</div><div>Open</div>
+                <div class="b">Type</div><div>1 hour</div>
+                <div class="b">Watchers</div><div>John Doe</div>
+                <div class="b">Tags</div><div>General</div>
+                <div class="b">Related Account</div><div></div>
+                <div class="b">Related Contact</div><div></div>
+                <div class="b">Email</div><div></div>
+                <div class="b">Assigned To</div><div></div>
+            </section>
+        </aside>
+    </main>
+    
+</section> 
+
+
+   
+
+<script>
+    //SWITCHING BETWEEN CONTENT TABS
+     var tabButtons=document.querySelectorAll(".ticketing main .TabGroup1 a");
+     var tabPanels=document.querySelectorAll(".ticketing main .TabGroup1 section");
+
+     function showPanel (panelIndex,colorCode){
+         tabButtons.forEach (function(node){
+             node.style.backgroundColor="";
+             node.style.color="";
+         });
+         tabButtons[panelIndex].style.backgroundColor=colorCode;
+         tabButtons[panelIndex].style.color="#555";
+         tabPanels.forEach(function(node){
+             node.style.display="none";
+         });
+         tabPanels[panelIndex].style.display="grid";
+         tabPanels[panelIndex].style.backgroundColor=colorCode;
+         
+     }
+     var tabButtons2=document.querySelectorAll(".ticketing main .TabGroup2 a");
+     var tabPanels2=document.querySelectorAll(".ticketing main .TabGroup2 section");
+
+     function showPanel2 (panelIndex,colorCode){
+         tabButtons2.forEach (function(node){
+             node.style.backgroundColor="";
+             node.style.color="";
+         });
+         tabButtons2[panelIndex].style.backgroundColor=colorCode;
+         tabButtons2[panelIndex].style.color="#555";
+         tabPanels2.forEach(function(node){
+             node.style.display="none";
+         });
+         tabPanels2[panelIndex].style.display="grid";
+         tabPanels2[panelIndex].style.backgroundColor=colorCode;
+         
+     }
+     var tabButtons3=document.querySelectorAll(".ticketing main .TabGroup3 a");
+     var tabPanels3=document.querySelectorAll(".ticketing main .TabGroup3 section");
+
+     function showPanel3 (panelIndex,colorCode){
+         tabButtons3.forEach (function(node){
+             node.style.backgroundColor="";
+             node.style.color="";
+         });
+         tabButtons3[panelIndex].style.backgroundColor=colorCode;
+         tabButtons3[panelIndex].style.color="#555";
+         tabPanels3.forEach(function(node){
+             node.style.display="none";
+         });
+         tabPanels3[panelIndex].style.display="grid";
+         tabPanels3[panelIndex].style.backgroundColor=colorCode;
+         //console.log("clicked"); //queryselector ran but wasn't switching tab
+         
+     }
+     var ticketButtons=document.querySelectorAll(".ticketing .bt");
+     //SWITCHING BETWEEN TICKETS
+     var ticketPanels=document.querySelectorAll(".ticketing main .TabGroup");
+
+     function showTicket (ticketIndex,ticketColor){
+        
+        ticketButtons.forEach(function(node){
+             node.style.backgroundColor="";
+             node.style.color="";
+         });
+         ticketButtons[ticketIndex].style.backgroundColor=ticketColor;
+         ticketButtons[ticketIndex].style.color="#267373";
+         
+         ticketPanels.forEach(function(node){
+             node.style.display="none";
+         });
+         ticketPanels[ticketIndex ].style.display="block";
+         ticketPanels[ticketIndex].style.backgroundColor=ticketColor;
+         
+     }
+     showTicket(0,'#f2f2f2');
+     showPanel(0, '#fff');
+     showPanel2(0, '#fff');
+     showPanel3(0, '#fff');
+</script>
+</body>
+</html>
